@@ -63,9 +63,15 @@
     }
 
     .logo {
+      $padding: 16px;
       position: static;
-      margin-right: 32px;
+      margin-right: 32px - $padding;
       transform: none;
+
+      a {
+        display: block;
+        padding: $padding;
+      }
 
       img {
         height: 24px;
